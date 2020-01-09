@@ -1,7 +1,7 @@
 Summary:       A graphics library for quick creation of PNG or JPEG images
 Name:          gd
 Version:       2.0.35
-Release:       10%{?dist}
+Release:       11%{?dist}
 Group:         System Environment/Libraries
 License:       MIT
 URL:           http://www.libgd.org/Main_Page
@@ -101,6 +101,10 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/pkgconfig/gdlib.pc
 
 %changelog
+* Mon Sep 10 2012 Honza Horak <hhorak@redhat.com> - 2.0.35-11
+- fix AALineThick.patch to draw line with inversed coordinates correctly
+  Resolves: #790400
+
 * Mon Feb 22 2010 Jiri Moskovcak <jmoskovc@redhat.com> - 2.0.35-10
 - fixed CVE-2009-3546 gd: insufficient input validation in _gdGetColors()
 - Resolves: #548502
