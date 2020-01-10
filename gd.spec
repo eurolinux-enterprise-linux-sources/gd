@@ -1,7 +1,7 @@
 Summary:       A graphics library for quick creation of PNG or JPEG images
 Name:          gd
 Version:       2.0.35
-Release:       24%{?dist}
+Release:       26%{?dist}
 Group:         System Environment/Libraries
 License:       MIT
 URL:           http://www.libgd.org/Main_Page
@@ -119,6 +119,12 @@ popd
 %{_libdir}/pkgconfig/gdlib.pc
 
 %changelog
+* Fri Jan 24 2014 Daniel Mach <dmach@redhat.com> - 2.0.35-26
+- Mass rebuild 2014-01-24
+
+* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 2.0.35-25
+- Mass rebuild 2013-12-27
+
 * Mon Mar 25 2013 Honza Horak <hhorak@redhat.com> - 2.0.35-24
 - Fix build on aarch64
 
